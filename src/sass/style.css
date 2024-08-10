@@ -1,0 +1,258 @@
+/** SCSS DARK THEME PRIMARY COLORS */ 
+/** SCSS DARK THEME SURFACE COLORS */ 
+/** SCSS DARK THEME MIXED SURFACE COLORS */ 
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@keyframes drawLogo {
+  0% {
+    stroke-dasharray: 4500;
+  }
+  100% {
+    stroke-dasharray: 0;
+  }
+}
+@keyframes toUp {
+  90% {
+    top: 0px;
+  }
+  100% {
+    top: -50vh;
+  }
+}
+@keyframes toBottom {
+  90% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -50vh;
+    display: none;
+  }
+}
+@keyframes openWord {
+  0% {
+    color: rgba(0, 0, 0, 0);
+    letter-spacing: -1em;
+  }
+  10% {
+    letter-spacing: -0.99em;
+    color: rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: white;
+    letter-spacing: 1px;
+  }
+}
+body {
+  background-color: #121212;
+}
+
+.loading .loadingUp, .loading .loadingBottom {
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  background-color: #282828;
+}
+.loading .loadingUp {
+  animation: toUp 7s ease;
+  top: 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.loading .loadingUp .svgLogo {
+  margin: 30px;
+  height: 150px;
+  width: 150px;
+  stroke: white;
+  stroke-width: 80px;
+  stroke-dasharray: 0;
+  animation: drawLogo 5s ease;
+}
+.loading .loadingBottom {
+  bottom: 0px;
+  animation: toBottom 7s ease;
+  display: flex;
+  align-items: flex-top;
+  justify-content: center;
+}
+.loading .loadingBottom h1 {
+  font-size: calc(30px + 1vw);
+  margin: 30px;
+  font-family: "Monoton", sans-serif;
+  color: #5e43f3;
+}
+.loading .loadingBottom h1 span {
+  letter-spacing: 1px;
+  color: transparent;
+  overflow: hidden;
+  color: white;
+  animation: openWord 8s ease;
+}
+
+.main {
+  width: 100vw;
+  height: 800vh;
+  background-color: #121212;
+  display: flex;
+  position: relative;
+}
+.main .main_cardSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+}
+
+.devCard {
+  padding: 50px;
+  margin: 80px;
+  background: #2f2b3a;
+  border: #908d96 1px solid;
+  border-radius: 20px;
+}
+.devCard .devCard_logo {
+  display: flex;
+}
+.devCard .devCard_logo div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.devCard .devCard_logo svg {
+  width: 40px;
+}
+.devCard .devCard_logo h2 {
+  margin-left: 20px;
+  color: #5e43f3;
+  font-family: "Monoton", sans-serif;
+  font-size: 30px;
+}
+.devCard .devCard_logo h2 span {
+  color: white;
+}
+.devCard .devCard_devImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.devCard .devCard_devImage img {
+  border-radius: 20px;
+  width: 300px;
+}
+.devCard .devCard_stack, .devCard .devCard_localization {
+  margin-bottom: 20px;
+}
+.devCard .devCard_stack h3, .devCard .devCard_localization h3 {
+  font-size: 10px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 8px;
+}
+.devCard .devCard_stack p, .devCard .devCard_localization p {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  font-family: "Maven Pro", sans-serif;
+}
+.devCard .devCard_buttons {
+  margin-top: 40px;
+}
+.devCard .devCard_buttons .devCard_buttons_top {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.devCard .devCard_buttons .devCard_buttons_top button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border: 1px solid #908d96;
+  cursor: pointer;
+  background: none;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.devCard .devCard_buttons .devCard_buttons_top button img {
+  width: 20px;
+}
+.devCard .devCard_buttons .devCard_buttons_top button:hover {
+  transition: 0.5s;
+  transform: translateY(-10px) scale(1.2);
+}
+.devCard .devCard_buttons .devCard_buttons_down button {
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #5e43f3;
+  color: white;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.devCard .devCard_buttons .devCard_buttons_down button:hover {
+  transition: 0.5s;
+  transform: translateY(-10px);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,83 @@
+@keyframes drawLogo
+    0%
+        stroke-dasharray: 4500
+    100%
+        stroke-dasharray: 0
+        
+@keyframes toUp
+
+    90%
+        top: 0px
+    100%
+        top: -50vh
+           
+@keyframes toBottom
+
+    90%
+        bottom: 0px
+    100%
+        bottom: -50vh
+        display: none
+
+@keyframes openWord 
+    0%
+        color: #00000000
+        letter-spacing: -1em
+        
+    10%
+        letter-spacing: -.99em
+        color: #00000000
+    25%
+        color: #00000000
+
+
+    100%
+        color: white
+        letter-spacing: 1px
+        
+body
+    background-color: $surface-100
+
+.loading
+    .loadingUp, .loadingBottom
+        position: absolute
+        width: 100vw
+        height: 50vh
+        background-color: $surface-200
+        
+    .loadingUp
+        animation: toUp 7s ease
+        top: 0px
+        display: flex
+        align-items: flex-end
+        justify-content: center
+
+    
+        .svgLogo
+            margin: 30px
+            height: 150px
+            width: 150px
+            stroke: white
+            stroke-width: 80px
+            stroke-dasharray: 0
+            animation: drawLogo 5s ease
+
+    .loadingBottom
+        bottom: 0px
+        animation: toBottom 7s ease
+        display: flex
+        align-items: flex-top
+        justify-content: center
+
+        h1
+            font-size: calc(30px + 1vw)
+            margin: 30px
+            font-family: $titleFont
+            color: $primary-200
+            span
+                letter-spacing: 1px
+                color: transparent
+                overflow: hidden
+                color: white
+                animation: openWord 8s ease
+
