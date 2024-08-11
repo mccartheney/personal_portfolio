@@ -1,9 +1,17 @@
+@keyframes appear
+    0%
+        transform: translateY(10px)
+    100%
+        transform: translateY(0px)
+    
 .devCard
+
     padding: 50px
     margin: 80px
     background: $surface-mixed-200
     border: $surface-mixed-600 1px solid
     border-radius: 20px
+    animation: appear 3s ease
 
     .devCard_logo
         display: flex
@@ -61,8 +69,8 @@
                 align-items: center
                 img
                     width: 20px
-                height: 35px
-                width: 35px
+                height: 45px
+                width: 45px
                 border: 1px solid $surface-mixed-600 
                 cursor: pointer
                 background: none
@@ -90,3 +98,115 @@
                 &:hover
                     transition: .5s
                     transform: translateY(-10px)
+
+
+@media (max-width: 1400px)
+    .devCard
+        padding: 20px
+        height: 90vh
+        margin-left: 50px
+
+        .devCard_logo
+            h2
+                margin-left: 20px
+                margin-top: 20px 
+                font-size: 25px
+
+        .devCard_devImage
+            margin-bottom: 70px
+            margin-top: 10px
+            img
+                width: 270px
+
+        .devCard_stack, .devCard_localization
+            margin-bottom: 60px
+
+        .devCard_buttons
+            margin-top: 70px
+            .devCard_buttons_top
+                button 
+                    width: 35px
+                    height: 35px
+            .devCard_buttons_down
+                button
+                    margin-top: 10px
+
+
+@media (max-width: 990px)
+    .devCard
+        height: auto
+        margin: 20px 0px 0px 0px !important
+        width: 90vw
+        border-radius: 40px
+        padding: 40px
+
+        .devCard_logo
+            
+            svg
+                width: 50px
+                margin-right: 20px
+            h2
+                margin: 0px
+                font-size: 35px
+
+        .devCard_devImage
+            margin-bottom: 70px
+            margin-top: 20px
+            img
+                width: 100%
+
+        .devCard_stack, .devCard_localization
+            margin-bottom: 30px
+            h3
+                font-size: 16px
+            p
+                font-size: 25px
+
+        .devCard_buttons
+            margin-top: 80px
+            .devCard_buttons_top
+                button 
+                    img
+                        width: 25px
+                    width: 55px
+                    height: 55px
+            .devCard_buttons_down
+                button
+                    height: 60px
+                    margin-top: 20px
+                    font-size: 20px
+
+@media (max-width: 750px)
+    .devCard    
+        width: 95vw
+
+        .devCard_logo
+            h2
+                font-size: calc(18px + 1.3vw)
+
+        .devCard_devImage
+            margin-bottom: 40px
+            margin-top: 20px
+            img
+                width: 100%
+
+        .devCard_stack, .devCard_localization
+            margin-bottom: 30px
+            h3
+                font-size: calc(10px + 1.3vw)
+            p
+                font-size: calc(16px + 1.3vw)
+
+        .devCard_buttons
+            margin-top: 50px
+            .devCard_buttons_top
+                button 
+                    img
+                        width: 20px
+                    width: 40px
+                    height: 40px
+            .devCard_buttons_down
+                button
+                    height: 50px
+                    margin-top: 20px
+                    font-size: 17px
