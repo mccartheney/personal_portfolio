@@ -1,0 +1,170 @@
+.hey
+    z-index: -1
+    margin-top: 140px !important
+    margin-left: 10px
+    height: 76vh
+    display: flex
+    flex-direction: column
+    justify-content: end
+
+    .hey_subTitle
+        background-color: $surface-100
+        width: fit-content
+        padding: 10px 15px
+        border-radius: 15px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border: 1px solid $surface-500
+        display: flex
+
+        p
+            font-size: 16px
+            font-family: $subTitleFont
+            margin-left: 10px
+            color: white
+            font-weight: 600
+
+    .hey_description
+        margin: 50px 0px
+        h2
+            font-family: $titleFont 
+            color: white
+            font-size: 70px
+
+    .hey_buttons
+        display: flex
+
+        button
+            font-family: $textFont 
+            padding: 20px 40px
+            border-radius: 30px
+            border: none
+            margin-right: 10px
+            font-size: 20px
+            background: none
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: .5s
+            cursor: pointer
+
+            &:hover
+                transform: translateY(-10px) scale(1.1)
+                transition: .5s
+
+        .hey_buttons-resume
+            color: white
+            img
+                margin-left: 10px
+            font-size: 20px
+
+        .hey_buttons-works
+            color: white
+            img
+                margin-left: 10px
+            font-size: 20px
+            background: $surface-100
+            border: 1px solid $surface-mixed-600
+
+@media (max-width: 1600px)
+    .hey
+        .hey_subTitle
+
+            p
+                font-size: 14px
+
+        .hey_description
+            h2
+                font-size: 55px
+
+        .hey_buttons
+            button
+            .hey_buttons-resume
+                font-size: 17px
+
+            .hey_buttons-works
+                font-size: 17px
+
+@media (max-width: 1600px)
+    .hey
+        .hey_description
+            h2
+                font-size: 45px
+
+@media (max-width: 990px)
+    .hey
+        margin-top: 50px 
+        margin-left: 5% !important
+        height: auto
+        display: flex
+        flex-direction: column
+        justify-content: start
+
+        .hey_subTitle
+            background-color: $surface-100
+            width: fit-content
+            padding: 10px 15px
+            border-radius: 15px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            border: 1px solid $surface-500
+            display: flex
+
+            p
+                font-size: 16px
+                font-family: $subTitleFont
+                margin-left: 10px
+                color: white
+                font-weight: 600
+
+        .hey_description
+            margin: 50px 0px
+            h2
+                font-family: $titleFont 
+                color: white
+                font-size: 50px
+
+@media (max-width: 750px)
+    .hey
+        .hey_description
+            h2
+                font-size: 40px
+    
+@media (max-width: 575px)
+    .hey
+        .hey_buttons
+            display: flex
+            flex-direction: column
+            button
+                padding: 0px
+                font-size: 30px
+                border-radius: 50px
+                display: flex
+                height: 60px
+                justify-content: center
+                align-items: center
+                transition: .5s
+                cursor: pointer
+
+                &:hover
+                    transform: translateY(-10px) scale(1.1)
+                    transition: .5s
+
+            .hey_buttons-resume
+                color: white
+                img
+                    margin-left: 10px
+                font-size: 20px
+                border: 1px solid $surface-mixed-600
+
+
+            .hey_buttons-works
+                margin-bottom: 20px
+                color: white
+                img
+                    margin-left: 10px
+                font-size: 20px
+                background: $surface-100
+                border: 1px solid $surface-mixed-600

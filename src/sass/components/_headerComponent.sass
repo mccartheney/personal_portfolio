@@ -1,0 +1,76 @@
+.header
+    display: flex
+    z-index: 1000
+    margin-top: 65px
+    
+    position: fixed
+    .header_options
+        backdrop-filter: blur(6px)
+        &:hover
+            transform: scale(1.05) translateY(-5px)
+            transition: .5s
+
+        transition: .5s
+        border-radius: 15px
+        font-size: 18px
+        margin: 10px 20px 10px 10px
+        border: 2px solid $surface-mixed-600
+        a
+            transition: .5s
+            padding: 15px 25px
+            width: 100%
+            height: 100%
+            font-weight: bold
+            font-family: $subTitleFont
+            img
+                display: none
+            display: flex
+            align-items: center
+            justify-content: center
+            color: white
+            text-decoration: none
+
+@media (max-width: 1600px)
+    .header_options
+        a
+            font-size: 15px
+
+
+@media (max-width: 1200px)
+    .header_options
+        border-radius: 30px !important
+        a
+            padding: 15px !important
+            span
+                display: none
+            img
+                display: flex !important
+
+@media (max-width: 990px)
+
+        .header
+            z-index: 10000
+            width: min-content
+            border: 1px solid $surface-mixed-600
+            border-radius: 20px !important
+            position: fixed
+            bottom: 20px
+            left: calc( 50vw - 135px )
+            display: flex
+            margin-top: 65px
+            backdrop-filter: blur(6px)
+            .header_options
+                &:hover
+                    transform: scale(1) translateY(0px)
+                margin: 0px !important
+                border: none
+                a
+                    transition: .5s
+                    width: 100%
+                    height: 100%
+                    padding: 10px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    color: white
+                    text-decoration: none

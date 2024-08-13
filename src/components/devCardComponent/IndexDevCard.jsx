@@ -10,7 +10,7 @@ import upworkLogo from "../../images/socialMedias/upwork.png"
 
 const DevCardComponent = () => {
     return (
-        <div className="devCard">
+        <div className="devCard" data-aos="fade-right">
             <div className="devCard_logo">
                 <div className="devCard_logo_image">
                     <IndexLogo/>

@@ -3,7 +3,17 @@ import LoadingComponent from "./components/loadingComponent/IndexLoading";
 import "./sass/style.css"
 import MainPageComponent from "./components/mainPageComponent/indexMainPage";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 function App() {
+  //useEffect for AOS
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   // create state to loading and chage page on load
   const [loading, setLoading] = useState (true)
 

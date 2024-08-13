@@ -1,7 +1,9 @@
 @keyframes appear
     0%
         transform: translateY(10px)
+        opacity: 0
     100%
+        opacity: 1
         transform: translateY(0px)
     
 .devCard
@@ -11,7 +13,7 @@
     background: $surface-mixed-200
     border: $surface-mixed-600 1px solid
     border-radius: 20px
-    animation: appear 3s ease
+    // animation: appear 3s ease
 
     .devCard_logo
         display: flex
