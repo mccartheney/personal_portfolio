@@ -4,12 +4,12 @@ import wind from "../../images/geral/wind.svg"
 const HeyComponent = () => {
     return (
         <div className="hey">
-            <div className="hey_subTitle">
+            <div className="hey_subTitle" data-aos="fade-left">
                 <img src={wind} alt="" />
                 <p>Hey, let's meet!</p>
             </div>
 
-            <div className="hey_description">
+            <div className="hey_description" data-aos="fade-left">
                 <h2>
                     I'm Mccartheney Mendes <br />
                     Full stack developer
@@ -17,10 +17,10 @@ const HeyComponent = () => {
             </div>
 
             <div className="hey_buttons">
-                <button className="hey_buttons-works">
+                <button className="hey_buttons-works" data-aos="fade-left">
                     My work <img src={works} alt="" />
                 </button>
-                <button className="hey_buttons-resume">
+                <button className="hey_buttons-resume" data-aos="fade-left">
                     Download CV <img src={download} alt="" />
                 </button>
             </div>

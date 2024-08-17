@@ -54,6 +54,12 @@ input {
   border-radius: 0;
 }
 
+@media (max-width: 575px) {
+  body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
 @keyframes drawLogo {
   0% {
     stroke-dasharray: 4500;
@@ -627,6 +633,10 @@ body {
   }
 }
 @media (max-width: 575px) {
+  .hey {
+    margin-top: 50px !important;
+    padding: 5px 0px;
+  }
   .hey .hey_buttons {
     display: flex;
     flex-direction: column;
@@ -643,8 +653,11 @@ body {
     cursor: pointer;
   }
   .hey .hey_buttons button:hover {
-    transform: translateY(-10px) scale(1.1);
+    transform: translateY(0px) scale(1);
     transition: 0.5s;
+  }
+  .hey .hey_buttons button {
+    margin-left: 0px;
   }
   .hey .hey_buttons .hey_buttons-resume {
     color: white;
