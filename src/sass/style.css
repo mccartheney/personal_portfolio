@@ -159,7 +159,6 @@ body {
   }
 }
 .main {
-  width: 100vw;
   background-color: #121212;
   display: flex;
   position: relative;
@@ -960,5 +959,172 @@ body {
   }
   .resume .resume_tools_tools .tool p {
     font-size: 18px;
+  }
+}
+.contact {
+  margin-top: 50px;
+}
+.contact .contact_subtitle {
+  background-color: #121212;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #717171;
+  display: flex;
+}
+.contact .contact_subtitle p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  color: white;
+  font-weight: 600;
+}
+.contact .contact_title {
+  margin: 50px 0px;
+}
+.contact .contact_title h2 {
+  width: 80%;
+  font-family: "Monoton", sans-serif;
+  color: white;
+  font-size: 70px !important;
+}
+.contact form {
+  width: 80%;
+}
+.contact form .contact_form_info {
+  display: flex;
+}
+.contact form .contact_form_info input {
+  font-family: "Maven Pro", sans-serif;
+  color: white;
+  font-size: 20px;
+  background: none;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 20px;
+  margin-bottom: 40px;
+  margin-right: 30px;
+  width: 90%;
+  border: none;
+  border-bottom: 3px solid #9171f8;
+}
+.contact form .contact_form_info input:focus {
+  outline: none;
+  border-bottom: 3px solid #5e43f3;
+}
+.contact form .contact_form_info input::-moz-placeholder {
+  color: #908d96;
+}
+.contact form .contact_form_info input::placeholder {
+  color: #908d96;
+}
+.contact form .contact_form_info .contact_form_info_names {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact form .contact_form_info .contact_form_info_contacts {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.contact form .contact_form_message textarea {
+  resize: none;
+  height: 200px;
+  font-family: "Maven Pro", sans-serif;
+  color: white;
+  font-size: 20px;
+  background: none;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 20px;
+  margin-bottom: 40px;
+  margin-right: 30px;
+  width: 98%;
+  border: none;
+  border-bottom: 3px solid #9171f8;
+}
+.contact form .contact_form_message textarea:focus {
+  outline: none;
+  border-bottom: 3px solid #5e43f3;
+}
+.contact form .contact_form_message textarea::-moz-placeholder {
+  color: #908d96;
+}
+.contact form .contact_form_message textarea::placeholder {
+  color: #908d96;
+}
+.contact form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 15px;
+  background: #5e43f3;
+  color: white;
+  font-size: 20px;
+  font-family: "Maven Pro", sans-serif;
+  cursor: pointer;
+}
+.contact form button img {
+  margin-left: 20px;
+  width: 30px;
+}
+.contact form button:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 1600px) {
+  .contact .contact_subTitle p {
+    font-size: 14px;
+  }
+  .contact .contact_title h2 {
+    font-size: 55px !important;
+  }
+  .contact form input, .contact form textarea, .contact form button {
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 1400px) {
+  .contact .contact_title h2 {
+    font-size: 45px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .contact .contact_title h2 {
+    font-size: 40px !important;
+  }
+}
+@media (max-width: 990px) {
+  .contact {
+    margin-left: 5%;
+  }
+  .contact .contact_title h2 {
+    font-size: 50px !important;
+  }
+  .contact .contact_form_info, .contact .contact_form_message {
+    width: 90vw;
+  }
+}
+@media (max-width: 750px) {
+  .contact .contact_title h2 {
+    font-size: 50px !important;
+  }
+  .contact_form_info {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact_form_info .contact_form_info_names, .contact_form_info .contact_form_info_contacts {
+    align-items: flex-start !important;
+    width: 108% !important;
+    margin: 0px !important;
   }
 }/*# sourceMappingURL=style.css.map */
