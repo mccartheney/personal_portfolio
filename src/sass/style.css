@@ -54,6 +54,10 @@ input {
   border-radius: 0;
 }
 
+* {
+  transition: 0.5s;
+}
+
 @media (max-width: 575px) {
   body, html {
     max-width: 100%;
@@ -156,7 +160,6 @@ body {
 }
 .main {
   width: 100vw;
-  height: 800vh;
   background-color: #121212;
   display: flex;
   position: relative;
@@ -676,5 +679,286 @@ body {
   }
   .hey .hey_buttons .hey_buttons-works img {
     margin-left: 10px;
+  }
+}
+.resume {
+  margin-top: 100px;
+}
+.resume .resume_subtitle {
+  background-color: #121212;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #717171;
+  display: flex;
+}
+.resume .resume_subtitle p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  color: white;
+  font-weight: 600;
+}
+.resume .resume_title {
+  margin: 50px 0px;
+}
+.resume .resume_title h2 {
+  font-family: "Monoton", sans-serif;
+  color: white;
+  font-size: 70px;
+}
+.resume .resume_about {
+  font-family: "Maven Pro", sans-serif;
+  color: #908d96;
+  line-height: 25px;
+  font-size: 20px;
+}
+.resume .resume_about p {
+  width: 80%;
+}
+.resume .resume_education .info {
+  margin-bottom: 60px;
+}
+.resume .resume_education .info .info_title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 40px 0px;
+  font-size: 30px;
+}
+.resume .resume_education .info .info_allContent .info_allContent_content {
+  border-bottom: 1px solid #717171;
+  width: 90%;
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resume .resume_education .info .info_allContent .info_allContent_content .info_allContent_content-course h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 15px;
+  font-family: "Maven Pro", sans-serif;
+}
+.resume .resume_education .info .info_allContent .info_allContent_content .info_allContent_content-course p {
+  color: white;
+  font-size: 14px;
+  margin-top: 15px;
+  font-family: "Maven Pro", sans-serif;
+}
+.resume .resume_education .info .info_allContent .info_allContent_content .info_allContent_content-date p {
+  font-size: 12x;
+  color: #717171;
+  font-family: "Maven Pro", sans-serif;
+}
+.resume .resume_education .info .info_allContent .info_allContent_content .info_allContent_content-description {
+  width: 30%;
+  color: #908d96;
+  font-size: 16px;
+  font-family: "Maven Pro", sans-serif;
+  margin-right: 50px;
+}
+.resume .resume_tools .resume_tools_title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 40px 0px;
+  font-size: 30px;
+}
+.resume .resume_tools .resume_tools_tools {
+  display: flex;
+  flex-wrap: wrap;
+}
+.resume .resume_tools .resume_tools_tools .tool {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 30px 50px;
+  border: 1px solid #908d96;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+.resume .resume_tools .resume_tools_tools .tool img {
+  width: 100px;
+}
+.resume .resume_tools .resume_tools_tools .tool p {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Maven Pro", sans-serif;
+}
+
+@media (max-width: 1600px) {
+  .resume .resume_subtitle p {
+    font-size: 14px !important;
+  }
+  .resume .resume_title h2 {
+    font-size: 55px !important;
+  }
+  .resume .resume_about p {
+    font-size: 17px;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-course h3 {
+    font-size: 25px !important;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-course p {
+    font-size: 13px !important;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-date p {
+    font-size: 12x;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-description {
+    font-size: 13px !important;
+  }
+  .resume .resume_tools .resume_tools_title {
+    font-size: 28px !important;
+  }
+  .resume .resume_tools .resume_tools_tools .tool {
+    padding: 20px 40px;
+  }
+  .resume .resume_tools .resume_tools_tools .tool img {
+    width: 80px;
+  }
+  .resume .resume_tools .resume_tools_tools .tool p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1400px) {
+  .resume .resume_subtitle p {
+    font-size: 14px !important;
+  }
+  .resume .resume_title h2 {
+    font-size: 55px !important;
+  }
+  .resume .resume_about p {
+    font-size: 17px;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-course h3 {
+    font-size: 20px !important;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-course p {
+    font-size: 10px !important;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-date p {
+    font-size: 10px;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-description {
+    font-size: 10px !important;
+  }
+  .resume .resume_tools .resume_tools_title {
+    font-size: 28px !important;
+  }
+  .resume .resume_tools .resume_tools_tools .tool {
+    padding: 20px 40px;
+  }
+  .resume .resume_tools .resume_tools_tools .tool img {
+    width: 75px;
+  }
+  .resume .resume_tools .resume_tools_tools .tool p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 990px) {
+  .resume {
+    margin-left: 5%;
+  }
+  .resume .resume_subtitle p {
+    font-size: 16px !important;
+  }
+  .resume .resume_title h2 {
+    font-size: 50px !important;
+  }
+  .resume .resume_about p {
+    font-size: 16px;
+  }
+  .resume .resume_education .info .info_title {
+    margin: 0px 0px;
+    margin-top: 60px !important;
+    font-size: 30px;
+  }
+  .resume .resume_education .info .info_allContent .info_allContent_content .info_allContent_content-course h3 {
+    font-size: 18px !important;
+  }
+  .resume .resume_education .info .info_allContent .info_allContent_content .info_allContent_content-course p {
+    font-size: 13px !important;
+  }
+  .resume .resume_education .info .info_allContent .info_allContent_content .info_allContent_content-date p {
+    font-size: 12x;
+  }
+  .resume .resume_education .info .info_allContent .info_allContent_content .info_allContent_content-description {
+    font-size: 10px !important;
+  }
+  .resume .resume_tools .resume_tools_title {
+    font-size: 30px !important;
+  }
+  .resume .resume_tools .resume_tools_tools .tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 40px;
+  }
+  .resume .resume_tools .resume_tools_tools .tool img {
+    width: 60px;
+  }
+  .resume .resume_tools .resume_tools_tools .tool p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 750px) {
+  .resume .info {
+    margin-bottom: 60px;
+  }
+  .resume .info .info_title {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: 40px 0px;
+    font-size: 30px;
+  }
+  .resume .info .info_allContent .info_allContent_content {
+    display: flex;
+    flex-direction: column;
+    width: 95% !important;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-course {
+    width: 100%;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-course h3 {
+    font-size: 40px;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-course p {
+    font-size: 14px;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-date {
+    width: 100%;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-date p {
+    font-size: 15px !important;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-description {
+    margin-top: 20px;
+    width: 100% !important;
+    width: 50%;
+  }
+  .resume .info .info_allContent .info_allContent_content .info_allContent_content-description p {
+    margin-left: 25px;
+    font-size: 14px !important;
+  }
+  .resume .resume_tools_title {
+    font-size: 28px !important;
+  }
+  .resume .resume_tools_tools .tool {
+    padding: 30px 0vw !important;
+    width: 38vw;
+  }
+  .resume .resume_tools_tools .tool img {
+    width: 80px;
+  }
+  .resume .resume_tools_tools .tool p {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

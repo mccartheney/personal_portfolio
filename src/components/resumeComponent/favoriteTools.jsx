@@ -2,8 +2,11 @@ const Tool = (props) => {
     const {image, name} = props
 
     return (
-        <div className="tool">
-
+        <div className="tool" data-aos="fade-up">
+            <img src={image} alt={name} />
+            <p>
+                {name}
+            </p>
         </div>
     )
 }

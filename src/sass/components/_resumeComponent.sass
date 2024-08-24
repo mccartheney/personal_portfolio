@@ -1,0 +1,303 @@
+.resume
+    margin-top: 100px
+    .resume_subtitle
+        background-color: $surface-100
+        width: fit-content
+        padding: 10px 15px
+        border-radius: 15px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border: 1px solid $surface-500
+        display: flex
+
+        p
+            font-size: 16px
+            font-family: $subTitleFont
+            margin-left: 10px
+            color: white
+            font-weight: 600
+
+    .resume_title
+        margin: 50px 0px
+        h2
+            font-family: $titleFont 
+            color: white
+            font-size: 70px
+
+    .resume_about
+        p
+            width: 80%
+        font-family: $textFont 
+        color: $surface-mixed-600
+        line-height: 25px
+        font-size: 20px
+
+    .resume_education
+        .info
+            margin-bottom: 60px
+            .info_title
+                color: white
+                font-family: $subTitleFont
+                margin: 40px 0px 
+                font-size: 30px
+
+            .info_allContent
+                .info_allContent_content
+                    border-bottom: 1px solid $surface-500
+                    width: 90%
+                    padding: 40px 0px
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+
+                    .info_allContent_content-course
+                        h3
+                            color: white
+                            font-size: 30px
+                            font-weight: bold
+                            margin-top: 15px
+                            font-family: $textFont
+                        p
+                            color: white
+                            font-size: 14px
+                            margin-top: 15px
+                            font-family: $textFont
+
+
+                    .info_allContent_content-date
+                        p
+                            font-size: 12x
+                            color: $surface-500
+                            font-family: $textFont
+
+                    .info_allContent_content-description
+                        width: 30%
+                        color: $surface-mixed-600
+                        font-size: 16px
+                        font-family: $textFont 
+                        margin-right: 50px
+
+    .resume_tools
+        .resume_tools_title
+            color: white
+            font-family: $subTitleFont
+            margin: 40px 0px 
+            font-size: 30px
+        
+        .resume_tools_tools
+            display: flex
+            flex-wrap: wrap
+
+            .tool
+                backdrop-filter: blur(4px)
+                padding: 30px 50px
+                border: 1px solid $surface-mixed-600
+                margin-right: 30px
+                margin-bottom: 25px
+                border-radius: 20px
+                img
+                    width: 100px
+
+                p
+                    margin-top: 20px
+                    text-align: center
+                    color: white
+                    font-size: 20px
+                    font-family: $textFont 
+
+@media (max-width: 1600px)
+    .resume
+        .resume_subtitle
+            p
+                font-size: 14px !important
+
+        .resume_title   
+            h2
+                font-size: 55px !important
+        
+        .resume_about
+            p
+                font-size: 17px
+
+        .resume_education
+        .info
+            .info_allContent
+                .info_allContent_content
+                    .info_allContent_content-course
+                        h3
+                            font-size: 25px !important
+                        p
+                            font-size: 13px !important
+
+                    .info_allContent_content-date
+                        p
+                            font-size: 12x
+                    .info_allContent_content-description
+                        font-size: 13px !important
+
+        .resume_tools
+            .resume_tools_title
+                font-size: 28px !important
+
+            
+            .resume_tools_tools
+                .tool
+                    padding: 20px 40px
+
+                    img
+                        width: 80px
+
+                    p
+                        font-size: 18px
+
+@media (max-width: 1400px)
+    .resume
+        .resume_subtitle
+            p
+                font-size: 14px !important
+
+        .resume_title   
+            h2
+                font-size: 55px !important
+        
+        .resume_about
+            p
+                font-size: 17px
+
+        .resume_education
+        .info
+            .info_allContent
+                .info_allContent_content
+                    .info_allContent_content-course
+                        h3
+                            font-size: 20px !important
+                        p
+                            font-size: 10px !important
+
+                    .info_allContent_content-date
+                        p
+                            font-size: 10px
+                    .info_allContent_content-description
+                        font-size: 10px !important
+
+        .resume_tools
+            .resume_tools_title
+                font-size: 28px !important
+
+            
+            .resume_tools_tools
+                .tool
+                    padding: 20px 40px
+
+                    img
+                        width: 75px
+
+                    p
+                        font-size: 16px
+
+@media (max-width: 990px)
+    .resume
+        margin-left: 5%
+        .resume_subtitle
+            p
+                font-size: 16px !important
+
+        .resume_title   
+            h2
+                font-size: 50px !important
+        
+        .resume_about
+            p
+                font-size: 16px
+
+        .resume_education
+            .info
+                .info_title
+                    margin: 0px 0px 
+                    margin-top: 60px !important
+                    font-size: 30px
+
+                .info_allContent
+                    .info_allContent_content
+                        .info_allContent_content-course
+                            h3
+                                font-size: 18px !important
+                            p
+                                font-size: 13px !important
+
+                        .info_allContent_content-date
+                            p
+                                font-size: 12x
+                        .info_allContent_content-description
+                            font-size: 10px !important
+
+        .resume_tools
+            .resume_tools_title
+                font-size: 30px !important
+
+            
+            .resume_tools_tools
+                .tool
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    padding: 25px 40px
+
+                    img
+                        width: 60px
+
+                    p
+                        font-size: 18px
+
+@media (max-width: 750px)
+    .resume
+        .info
+            margin-bottom: 60px
+            .info_title
+                color: white
+                font-family: $subTitleFont
+                margin: 40px 0px 
+                font-size: 30px
+
+            .info_allContent
+                .info_allContent_content
+                    display: flex
+                    flex-direction: column
+                    width: 95% !important
+
+                    .info_allContent_content-course
+                        width: 100%
+                        h3
+                            font-size: 40px 
+                        p
+                            font-size: 14px
+
+
+                    .info_allContent_content-date
+                        width: 100%
+                        p
+                            font-size: 15px !important
+
+                    .info_allContent_content-description
+                        margin-top: 20px
+                        width: 100% !important
+                        width: 50%
+                        p
+                            margin-left: 25px
+                            font-size: 14px !important
+
+        .resume_tools_title
+            font-size: 28px !important
+
+            
+        .resume_tools_tools
+            .tool
+                padding: 30px 0vw !important
+                width: 38vw
+                img
+                    width: 80px
+
+                p
+                    font-size: 18px
