@@ -26,7 +26,7 @@ const ResumeComponent = () => {
     ]
 
     return (
-        <div className="resume" >
+        <div className="resume" id="resume">
             <div className="resume_subtitle" data-aos="fade-left" >
                 <img src={wave} alt="icon"/>
                 <p>

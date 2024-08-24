@@ -3,7 +3,7 @@ import download from "../../images/geral/download.svg"
 import wind from "../../images/geral/wind.svg"
 const HeyComponent = () => {
     return (
-        <div className="hey">
+        <div className="hey" id="home">
             <div className="hey_subTitle" data-aos="fade-left">
                 <img src={wind} alt="" />
                 <p>Hey, let's meet!</p>

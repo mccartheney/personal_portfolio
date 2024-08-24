@@ -58,6 +58,10 @@ input {
   transition: 0.5s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 575px) {
   body, html {
     max-width: 100%;
@@ -963,6 +967,7 @@ body {
 }
 .contact {
   margin-top: 50px;
+  margin-bottom: 40px;
 }
 .contact .contact_subtitle {
   background-color: #121212;
@@ -1126,5 +1131,74 @@ body {
     align-items: flex-start !important;
     width: 108% !important;
     margin: 0px !important;
+  }
+}
+footer {
+  height: 30vh;
+  width: 79%;
+}
+footer .footer_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  border-top: 1px solid #908d96;
+}
+footer .footer_content h3 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+footer .footer_content p {
+  font-family: "Maven Pro", sans-serif;
+  color: #908d96;
+}
+
+@media (max-width: 990px) {
+  footer {
+    margin-left: 5%;
+    width: 88%;
+  }
+  footer .footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-top: 1px solid #908d96;
+  }
+  footer .footer_content h3 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  footer .footer_content p {
+    font-family: "Maven Pro", sans-serif;
+    color: #908d96;
+  }
+}
+@media (max-width: 760px) {
+  footer {
+    width: 88vw !important;
+  }
+  footer .footer_content {
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 40px;
+    border-top: 1px solid #908d96;
+  }
+  footer .footer_content div {
+    margin-bottom: 20px;
+  }
+  footer .footer_content h3 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  footer .footer_content p {
+    font-family: "Maven Pro", sans-serif;
+    color: #908d96;
   }
 }/*# sourceMappingURL=style.css.map */

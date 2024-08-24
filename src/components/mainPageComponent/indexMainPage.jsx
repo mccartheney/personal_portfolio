@@ -1,5 +1,6 @@
 import ContactComponent from "../contactComponent/contactIndex"
 import DevCardComponent from "../devCardComponent/IndexDevCard"
+import FooterComponent from "../footerComponent/footerIndex"
 import HeaderComponent from "../headerComponent/indexHeader"
 import HeyComponent from "../heyComponent/HeyIndex"
 import ParticlesComponent from "../particlesComponent/indexParticle"
@@ -16,7 +17,8 @@ const MainPageComponent = () => {
             <HeaderComponent/>
             <HeyComponent/>
             <ResumeComponent/>
-            <ContactComponent/>
+            <ContactComponent />
+            <FooterComponent/>
         </div>
     </div>
 }

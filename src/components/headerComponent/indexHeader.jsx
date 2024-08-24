@@ -8,7 +8,7 @@ const HeaderComponent = () => {
     return (
         <div className="header" >
             <div className="header_options">
-                <a href="#re">
+                <a href="#home">
                     <img src={homeIcon} alt="Home" />
                     <span>
                         Home
@@ -16,7 +16,7 @@ const HeaderComponent = () => {
                 </a>
             </div>
             <div className="header_options">
-                <a href="">
+                <a href="#Portfolio">
                     <img src={portfolioIcon} alt="Portfolio" />
                     <span>
                         Portfolio
@@ -24,7 +24,7 @@ const HeaderComponent = () => {
                 </a>
             </div>
             <div className="header_options">
-                <a href="">
+                <a href="#about">
                     <img src={aboutIcon} alt="About Me" />
                     <span>
                         About Me
@@ -32,7 +32,7 @@ const HeaderComponent = () => {
                 </a>
             </div>
             <div className="header_options">
-                <a href="">
+                <a href="#resume">
                     <img src={resumeIcon} alt="Resume" />
                     <span>
                         Resume
@@ -40,7 +40,7 @@ const HeaderComponent = () => {
                 </a>
             </div>
             <div className="header_options">
-                <a href="">
+                <a href="#contact">
                     <img src={contactIcon} alt="Contact" />
                     <span>
                         Contact
