@@ -1,0 +1,269 @@
+.projects
+    margin-top: 140px !important
+    .projects_subtitle
+        background-color: $surface-100
+        width: fit-content
+        padding: 10px 15px
+        border-radius: 15px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border: 1px solid $surface-500
+        display: flex
+
+        p
+            font-size: 16px
+            font-family: $subTitleFont
+            margin-left: 10px
+            color: white
+            font-weight: 600
+    
+    .projects_title
+        margin: 50px 0px
+        h2
+            font-family: $titleFont 
+            color: white
+            font-size: 70px
+    .projects_projects
+        display: flex
+        flex-wrap: wrap
+        .projectCard
+            cursor: pointer
+            margin: 30px 60px 30px 0px
+            width: 40%
+            border: 1px solid $surface-500
+            border-radius: 15px
+            backdrop-filter: blur(5px)
+            .projectCard_image
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    width: 40%
+
+            .projectCard_techs
+                display: flex
+                flex-wrap: wrap
+                padding: 20px
+
+                .projectCard_techs_tech
+                    padding: 10px 25px
+                    font-size: 13px
+                    color: white 
+                    border: 1px solid $surface-500
+                    border-radius: 10px
+                    font-family: $textFont
+                    margin-right: 25px
+                    margin-bottom: 20px
+        .projectScreen
+
+            animation: open 1s ease-in-out forwards
+
+            * 
+                opacity: 0
+                animation: fadeIn 1s ease-in-out forwards
+                animation-delay: 0s
+
+
+            z-index: 100000
+            position: fixed
+            width: 100vw
+            height: 100vh
+            backdrop-filter: blur(10px)
+            left: 0px
+            top: 0px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+            .projectScreen_close
+                position: absolute
+                z-index: 100001
+                top: 40px
+                right: 50px
+                button
+                    font-family: $titleFont 
+                    color: white
+                    border: none
+                    cursor: pointer
+                    font-size: 50px
+                    background: none
+                    
+                    &:hover
+                        transform: rotate(360deg)
+            .projectScreen_content
+                .projectScreen_content_title
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    h2
+                        font-weight: bold
+                        font-size: 30px
+                        font-family: $subTitleFont
+                        color: white
+                    img
+                        margin-left: 30px
+            .projectScreen_content_techs
+                margin-top: 20px
+                display: flex
+                
+                .projectScreen_content_techs_tech
+                    padding: 10px 25px
+                    font-size: 13px
+                    color: white 
+                    border: 1px solid $surface-500
+                    border-radius: 10px
+                    font-family: $textFont
+                    margin-right: 25px
+                    margin-bottom: 20px
+
+            .projectScreen_content_description
+                p
+                    font-family: $textFont
+                    color: white
+                    font-size: 17px
+        .invisible
+            display: none
+        
+
+@media (max-width: 1600px)
+    .projects
+        .projects_subtitle
+            p
+                font-size: 14px
+
+        .projects_title
+            h2
+                font-size: 55px
+
+        .projects_projects
+            .projectCard
+                width: 39%
+                .projectCard_techs
+                    .projectCard_techs_tech
+                        padding: 10px 10px
+                        font-size: 10px
+                        color: white
+                .projectCard_image
+                    img
+                        width: 80% !important
+
+@media (max-width: 990px)
+    .projects 
+        margin-left: 5% !important
+        .projects_subtitle 
+            p
+                font-size: 16px !important
+        .projects_projects
+            .projectCard
+                .projectCard_image
+                    img
+                        width: 80% !important
+                        
+
+
+
+@media (max-width: 750px)
+    .projects
+        .projects_title
+            h2
+                font-size: 40px
+
+        .projects_projects
+            flex-direction: column
+            align-items: flex-start
+            .projectCard
+                cursor: pointer
+                margin: 30px 0px 30px 0px !important
+                width: 95% !important
+                border: 1px solid $surface-500
+                border-radius: 15px
+                backdrop-filter: blur(5px)
+                .projectCard_image
+                    img
+                        width: 60% !important
+
+                .projectCard_techs
+                    .projectCard_techs_tech
+                        padding: 10px 25px
+                        font-size: 13px
+                        color: white
+        .projectScreen_logo
+            img
+                width: 60vw !important
+        .projectScreen_content
+            .projectScreen_content_title
+                display: flex
+                justify-content: space-between
+                align-items: center
+                h2
+                    font-weight: bold
+                    font-size: 25px !important
+                    font-family: $subTitleFont
+                    color: white
+                img
+                    margin-left: 30px
+            .projectScreen_content_techs
+                margin-top: 20px
+                display: flex
+                flex-wrap: wrap
+                width: 80vw
+                .projectScreen_content_techs_tech
+                    padding: 10px 25px
+                    font-size: 13px
+                    color: white 
+                    border: 1px solid $surface-500
+                    border-radius: 10px
+                    font-family: $textFont
+                    margin-right: 25px
+                    margin-bottom: 20px
+
+            .projectScreen_content_description
+                p
+                    font-family: $textFont
+                    color: white
+                    font-size: 13px !important
+
+@media (max-width: 575px)
+    .projects_projects
+        flex-direction: column
+        align-items: flex-start
+        .projectCard
+            cursor: pointer
+            margin: 30px 0px 30px 0px !important
+            width: 95% !important
+            border: 1px solid $surface-500
+            border-radius: 15px
+            backdrop-filter: blur(5px)
+            .projectCard_image
+                img
+                    width: 90% !important
+
+            .projectCard_techs
+                .projectCard_techs_tech
+                    padding: 10px 25px
+                    font-size: 10px
+                    color: white
+
+@keyframes open
+  0%
+    left: 50%
+    top: 50%
+    width: 0px
+    height: 0px
+    opacity: 0
+
+  100%
+    height: 100vh
+    width: 100vw
+    left: 0
+    top: 0
+    opacity: 1
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1

@@ -1,0 +1,117 @@
+.aboutMe
+    margin-top: 140px !important
+
+    .aboutMe_subtitle
+        background-color: $surface-100
+        width: fit-content
+        padding: 10px 15px
+        border-radius: 15px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border: 1px solid $surface-500
+        display: flex
+
+        p
+            font-size: 16px
+            font-family: $subTitleFont
+            margin-left: 10px
+            color: white
+            font-weight: 600
+    
+    .aboutMe_title
+        margin: 50px 0px
+        h2
+            font-family: $titleFont 
+            color: white
+            font-size: 70px
+
+    .aboutMe_content 
+        display: flex
+
+        .aboutMe_content_text
+            width: 65%
+            margin-right: 50px
+
+            p
+                font-size: 17px
+                font-family: $textFont 
+                margin-bottom: 30px
+                color: white
+                line-height: 25px
+
+        .aboutMe_content_infos  
+            .aboutMe_content_infos_info
+                margin-bottom: 25px
+                color: white
+                h3
+                    font-size: 18px
+                    font-weight: bold
+                    margin-bottom: 5px
+                    font-family: $subTitleFont
+                p
+                    font-size: 16px
+                    font-family: $textFont
+        
+    .aboutMe_download
+        button
+            padding: 10px 25px
+            color: white
+            background: $primary-200
+            font-size: 17px
+            font-family: $textFont
+            display: flex
+            align-items: center
+            justify-content: space-between
+            border: none
+            border-radius: 15px
+            cursor: pointer
+
+            &:hover
+                transform: translateY(-10px)
+
+            img
+                margin-left: 20px
+
+
+    .aboutMe_cards
+        display: flex
+        flex-wrap: wrap
+        margin-top: 50px
+
+        .techCard
+            padding: 40px 20px 0px 20px 
+            width: 40%
+            margin-right: 50px
+            border: 1px solid $surface-500
+            border-radius: 15px
+            backdrop-filter: blur(3px)
+
+            .techCard_title
+                h3
+                    font-size: 30px
+                    font-family: $subTitleFont
+                    color: white
+                    margin-bottom: 20px
+
+            .techCard_topics
+                display: flex
+                flex-wrap: wrap
+                .techCard_topics_topic
+                    padding: 10px 20px
+                    font-size: 13px
+                    color: white 
+                    border: 1px solid $surface-500
+                    border-radius: 10px
+                    font-family: $textFont
+                    margin-right: 25px
+                    margin-bottom: 20px
+            .techCard_image
+                margin-top: 50px
+                img
+                    width: 100%
+
+@media (max-width: 1600px)
+@media (max-width: 990px)
+@media (max-width: 750px)
+@media (max-width: 575px)

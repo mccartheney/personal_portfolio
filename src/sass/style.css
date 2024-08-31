@@ -646,8 +646,10 @@ body {
   .hey .hey_buttons {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
   .hey .hey_buttons button {
+    width: 95%;
     padding: 0px;
     font-size: 30px;
     border-radius: 50px;
@@ -682,6 +684,288 @@ body {
   }
   .hey .hey_buttons .hey_buttons-works img {
     margin-left: 10px;
+  }
+}
+.projects {
+  margin-top: 140px !important;
+}
+.projects .projects_subtitle {
+  background-color: #121212;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #717171;
+  display: flex;
+}
+.projects .projects_subtitle p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  color: white;
+  font-weight: 600;
+}
+.projects .projects_title {
+  margin: 50px 0px;
+}
+.projects .projects_title h2 {
+  font-family: "Monoton", sans-serif;
+  color: white;
+  font-size: 70px;
+}
+.projects .projects_projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects .projects_projects .projectCard {
+  cursor: pointer;
+  margin: 30px 60px 30px 0px;
+  width: 40%;
+  border: 1px solid #717171;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.projects .projects_projects .projectCard .projectCard_image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects .projects_projects .projectCard .projectCard_image img {
+  width: 40%;
+}
+.projects .projects_projects .projectCard .projectCard_techs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.projects .projects_projects .projectCard .projectCard_techs .projectCard_techs_tech {
+  padding: 10px 25px;
+  font-size: 13px;
+  color: white;
+  border: 1px solid #717171;
+  border-radius: 10px;
+  font-family: "Maven Pro", sans-serif;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.projects .projects_projects .projectScreen {
+  animation: open 1s ease-in-out forwards;
+  z-index: 100000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects .projects_projects .projectScreen * {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0s;
+}
+.projects .projects_projects .projectScreen .projectScreen_close {
+  position: absolute;
+  z-index: 100001;
+  top: 40px;
+  right: 50px;
+}
+.projects .projects_projects .projectScreen .projectScreen_close button {
+  font-family: "Monoton", sans-serif;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+  background: none;
+}
+.projects .projects_projects .projectScreen .projectScreen_close button:hover {
+  transform: rotate(360deg);
+}
+.projects .projects_projects .projectScreen .projectScreen_content .projectScreen_content_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .projects_projects .projectScreen .projectScreen_content .projectScreen_content_title h2 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.projects .projects_projects .projectScreen .projectScreen_content .projectScreen_content_title img {
+  margin-left: 30px;
+}
+.projects .projects_projects .projectScreen .projectScreen_content_techs {
+  margin-top: 20px;
+  display: flex;
+}
+.projects .projects_projects .projectScreen .projectScreen_content_techs .projectScreen_content_techs_tech {
+  padding: 10px 25px;
+  font-size: 13px;
+  color: white;
+  border: 1px solid #717171;
+  border-radius: 10px;
+  font-family: "Maven Pro", sans-serif;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.projects .projects_projects .projectScreen .projectScreen_content_description p {
+  font-family: "Maven Pro", sans-serif;
+  color: white;
+  font-size: 17px;
+}
+.projects .projects_projects .invisible {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  .projects .projects_subtitle p {
+    font-size: 14px;
+  }
+  .projects .projects_title h2 {
+    font-size: 55px;
+  }
+  .projects .projects_projects .projectCard {
+    width: 39%;
+  }
+  .projects .projects_projects .projectCard .projectCard_techs .projectCard_techs_tech {
+    padding: 10px 10px;
+    font-size: 10px;
+    color: white;
+  }
+  .projects .projects_projects .projectCard .projectCard_image img {
+    width: 80% !important;
+  }
+}
+@media (max-width: 990px) {
+  .projects {
+    margin-left: 5% !important;
+  }
+  .projects .projects_subtitle p {
+    font-size: 16px !important;
+  }
+  .projects .projects_projects .projectCard .projectCard_image img {
+    width: 80% !important;
+  }
+}
+@media (max-width: 750px) {
+  .projects .projects_title h2 {
+    font-size: 40px;
+  }
+  .projects .projects_projects {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .projects .projects_projects .projectCard {
+    cursor: pointer;
+    margin: 30px 0px 30px 0px !important;
+    width: 95% !important;
+    border: 1px solid #717171;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  .projects .projects_projects .projectCard .projectCard_image img {
+    width: 60% !important;
+  }
+  .projects .projects_projects .projectCard .projectCard_techs .projectCard_techs_tech {
+    padding: 10px 25px;
+    font-size: 13px;
+    color: white;
+  }
+  .projects .projectScreen_logo img {
+    width: 60vw !important;
+  }
+  .projects .projectScreen_content .projectScreen_content_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .projects .projectScreen_content .projectScreen_content_title h2 {
+    font-weight: bold;
+    font-size: 25px !important;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
+  .projects .projectScreen_content .projectScreen_content_title img {
+    margin-left: 30px;
+  }
+  .projects .projectScreen_content .projectScreen_content_techs {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+  .projects .projectScreen_content .projectScreen_content_techs .projectScreen_content_techs_tech {
+    padding: 10px 25px;
+    font-size: 13px;
+    color: white;
+    border: 1px solid #717171;
+    border-radius: 10px;
+    font-family: "Maven Pro", sans-serif;
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+  .projects .projectScreen_content .projectScreen_content_description p {
+    font-family: "Maven Pro", sans-serif;
+    color: white;
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 575px) {
+  .projects_projects {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .projects_projects .projectCard {
+    cursor: pointer;
+    margin: 30px 0px 30px 0px !important;
+    width: 95% !important;
+    border: 1px solid #717171;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  .projects_projects .projectCard .projectCard_image img {
+    width: 90% !important;
+  }
+  .projects_projects .projectCard .projectCard_techs .projectCard_techs_tech {
+    padding: 10px 25px;
+    font-size: 10px;
+    color: white;
+  }
+}
+@keyframes open {
+  0% {
+    left: 50%;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .resume {
@@ -1201,4 +1485,121 @@ footer .footer_content p {
     font-family: "Maven Pro", sans-serif;
     color: #908d96;
   }
+}
+.aboutMe {
+  margin-top: 140px !important;
+}
+.aboutMe .aboutMe_subtitle {
+  background-color: #121212;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #717171;
+  display: flex;
+}
+.aboutMe .aboutMe_subtitle p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  color: white;
+  font-weight: 600;
+}
+.aboutMe .aboutMe_title {
+  margin: 50px 0px;
+}
+.aboutMe .aboutMe_title h2 {
+  font-family: "Monoton", sans-serif;
+  color: white;
+  font-size: 70px;
+}
+.aboutMe .aboutMe_content {
+  display: flex;
+}
+.aboutMe .aboutMe_content .aboutMe_content_text {
+  width: 65%;
+  margin-right: 50px;
+}
+.aboutMe .aboutMe_content .aboutMe_content_text p {
+  font-size: 17px;
+  font-family: "Maven Pro", sans-serif;
+  margin-bottom: 30px;
+  color: white;
+  line-height: 25px;
+}
+.aboutMe .aboutMe_content .aboutMe_content_infos .aboutMe_content_infos_info {
+  margin-bottom: 25px;
+  color: white;
+}
+.aboutMe .aboutMe_content .aboutMe_content_infos .aboutMe_content_infos_info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.aboutMe .aboutMe_content .aboutMe_content_infos .aboutMe_content_infos_info p {
+  font-size: 16px;
+  font-family: "Maven Pro", sans-serif;
+}
+.aboutMe .aboutMe_download button {
+  padding: 10px 25px;
+  color: white;
+  background: #5e43f3;
+  font-size: 17px;
+  font-family: "Maven Pro", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.aboutMe .aboutMe_download button:hover {
+  transform: translateY(-10px);
+}
+.aboutMe .aboutMe_download button img {
+  margin-left: 20px;
+}
+.aboutMe .aboutMe_cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.aboutMe .aboutMe_cards .techCard {
+  padding: 40px 20px 0px 20px;
+  width: 40%;
+  margin-right: 50px;
+  border: 1px solid #717171;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+.aboutMe .aboutMe_cards .techCard .techCard_title h3 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+.aboutMe .aboutMe_cards .techCard .techCard_topics {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutMe .aboutMe_cards .techCard .techCard_topics .techCard_topics_topic {
+  padding: 10px 20px;
+  font-size: 13px;
+  color: white;
+  border: 1px solid #717171;
+  border-radius: 10px;
+  font-family: "Maven Pro", sans-serif;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.aboutMe .aboutMe_cards .techCard .techCard_image {
+  margin-top: 50px;
+}
+.aboutMe .aboutMe_cards .techCard .techCard_image img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
