@@ -62,7 +62,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 990px) {
   body, html {
     max-width: 100%;
     overflow-x: hidden;
@@ -197,6 +197,7 @@ body {
   }
 }
 .devCard {
+  height: auto !important;
   padding: 50px;
   margin: 80px;
   background: #2f2b3a;
@@ -1569,6 +1570,7 @@ footer .footer_content p {
   margin-top: 50px;
 }
 .aboutMe .aboutMe_cards .techCard {
+  margin-right: 10%;
   padding: 40px 20px 0px 20px;
   width: 40%;
   margin-right: 50px;
@@ -1602,4 +1604,102 @@ footer .footer_content p {
 }
 .aboutMe .aboutMe_cards .techCard .techCard_image img {
   width: 100%;
+}
+
+@media (max-width: 1600px) {
+  .aboutMe .aboutMe_subTitle p {
+    font-size: 14px;
+  }
+  .aboutMe .aboutMe_title h2 {
+    font-size: 55px;
+  }
+  .aboutMe .aboutMe_content p {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+  .aboutMe .aboutMe_content_infos .aboutMe_content_infos_info h3 {
+    font-size: 16px !important;
+  }
+  .aboutMe .aboutMe_content_infos .aboutMe_content_infos_info p {
+    font-size: 14px !important;
+  }
+  .aboutMe .aboutMe_cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .aboutMe .aboutMe_cards .techCard .techCard_title h3 {
+    font-size: 30px !important;
+  }
+  .aboutMe .aboutMe_cards .techCard .techCard_topics .techCard_topics_topic {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .aboutMe_content {
+    display: flex;
+    flex-direction: column !important;
+    margin-bottom: 30px;
+  }
+  .aboutMe_content .aboutMe_content_text {
+    width: 80% !important;
+  }
+  .aboutMe_cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .aboutMe_cards .techCard .techCard_title h3 {
+    font-size: 28px !important;
+  }
+  .aboutMe_cards .techCard .techCard_topics .techCard_topics_topic {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 990px) {
+  .aboutMe {
+    margin-left: 5%;
+  }
+  .aboutMe .aboutMe_subTitle p {
+    font-size: 16px;
+  }
+  .aboutMe .aboutMe_title h2 {
+    font-size: 50px;
+  }
+  .aboutMe .aboutMe_cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .aboutMe .aboutMe_cards .techCard {
+    margin-right: 10%;
+    width: 40%;
+  }
+  .aboutMe .aboutMe_cards .techCard .techCard_title h3 {
+    font-size: 28px !important;
+  }
+  .aboutMe .aboutMe_cards .techCard .techCard_topics .techCard_topics_topic {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 750px) {
+  .aboutMe .aboutMe_title h2 {
+    font-size: 40px;
+  }
+  .aboutMe_cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap !important;
+    margin-top: 50px;
+  }
+  .aboutMe_cards .techCard {
+    margin-left: 2% !important;
+    width: 90% !important;
+  }
+  .aboutMe_cards .techCard .techCard_title h3 {
+    font-size: 28px !important;
+  }
+  .aboutMe_cards .techCard .techCard_topics .techCard_topics_topic {
+    font-size: 10px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
