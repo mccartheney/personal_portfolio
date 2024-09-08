@@ -15,18 +15,22 @@ const FooterComponent = () => {
                     <h3>
                         Email
                     </h3>
-                    <p>
-                        mccartheney@hotmail.com
-                    </p>
+                    <a href="mailto:mccartheney@hotmail.com">
+                        <p>
+                            mccartheney@hotmail.com
+                        </p>
+                    </a>
                 </div>
 
                 <div className="footer_content_github">
                     <h3>
                         GitHub
                     </h3>
-                    <p>
-                        @mccartheney
-                    </p>
+                    <a href="https://github.com/mccartheney" target="_blank">
+                        <p>
+                            @mccartheney
+                        </p>
+                    </a>
                 </div>
             </div>
         </footer>

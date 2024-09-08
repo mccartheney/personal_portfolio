@@ -5,6 +5,8 @@ import frontend from "../../images/geral/front.png"
 import backend from "../../images/geral/back.png"
 import AbouTechCardComponent from "./aboutTechCard"
 
+import mccartheney_resume from "../../documents/resume.pdf"
+
 const AboutMeComponent = () => {
     return (
         <div className="aboutMe" id="about">
@@ -17,7 +19,7 @@ const AboutMeComponent = () => {
 
             <div className="aboutMe_title" data-aos="fade-left">
                 <h2>
-                    Turning yours problems into yours solutions
+                    Turning your problems into your solutions                
                 </h2>
             </div>
 
@@ -45,7 +47,9 @@ const AboutMeComponent = () => {
             </div>
 
             <div className="aboutMe_download" data-aos="fade-left">
-                <button>Download CV <img src={download} alt="download" /></button>
+                <a href={mccartheney_resume} download="Mccartheney_Resume">
+                    <button>Download CV <img src={download} alt="download" /></button>
+                </a>
             </div>
 
             <div className="aboutMe_cards">

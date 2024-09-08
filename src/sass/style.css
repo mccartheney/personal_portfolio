@@ -696,7 +696,8 @@ body {
   }
 }
 .projects {
-  margin-top: 140px !important;
+  padding-top: 150px;
+  margin-top: 10px !important;
 }
 .projects .projects_subtitle {
   background-color: #121212;
@@ -980,7 +981,8 @@ body {
   }
 }
 .resume {
-  margin-top: 100px;
+  padding-top: 150px;
+  margin-top: 10px !important;
 }
 .resume .resume_subtitle {
   background-color: #121212;
@@ -1264,7 +1266,8 @@ body {
   }
 }
 .contact {
-  margin-top: 50px;
+  padding-top: 150px;
+  margin-top: 10px !important;
   margin-bottom: 40px;
 }
 .contact .contact_subtitle {
@@ -1495,13 +1498,17 @@ footer .footer_content p {
     font-size: 18px;
     font-weight: bold;
   }
-  footer .footer_content p {
+  footer .footer_content a p {
     font-family: "Maven Pro", sans-serif;
     color: #908d96;
   }
+  footer .footer_content a p:hover {
+    color: #5e43f3 !important;
+  }
 }
 .aboutMe {
-  margin-top: 140px !important;
+  padding-top: 150px;
+  margin-top: 10px !important;
 }
 .aboutMe .aboutMe_subtitle {
   background-color: #121212;

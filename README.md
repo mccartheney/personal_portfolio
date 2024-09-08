@@ -1,7 +1,5 @@
 # Personal Portfolio
 
-**Note: This project is currently a work in progress and is not yet complete.** 
-
 This personal portfolio project is being built using **ReactJS** and **SASS**. The portfolio will showcase my work, skills, and contact information, serving as a digital resume for potential employers or clients.
 
 ## Table of Contents
@@ -17,7 +15,7 @@ This personal portfolio project is being built using **ReactJS** and **SASS**. T
 
 ## Demo
 
-In development yet
+- <a href="https://mccartheney.netlify.app/" target="_blank">Live Preview</a>
 
 ## Features
 

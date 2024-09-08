@@ -17,7 +17,7 @@ const ProjectsComponent = () => {
     ];
 
     return (
-        <div className="projects">
+        <div className="projects" id="portfolio">
             <div className="projects_subtitle" data-aos="fade-left" id="portfolio">
                 <img src={wave} alt="wave" />
                 <p>
