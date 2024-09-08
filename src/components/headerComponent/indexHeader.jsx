@@ -16,7 +16,7 @@ const HeaderComponent = () => {
                 </a>
             </div>
             <div className="header_options">
-                <a href="#Portfolio">
+                <a href="#portfolio">
                     <img src={portfolioIcon} alt="Portfolio" />
                     <span>
                         Portfolio

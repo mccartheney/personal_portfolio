@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 
 
 function App() {
+  
   //useEffect for AOS
   useEffect(() => {
     AOS.init();

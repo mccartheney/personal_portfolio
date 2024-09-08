@@ -6,7 +6,7 @@ import github from "../../images/socialMedias/github.png"
 const ProjectsComponent = () => {
     return (
         <div className="projects">
-            <div className="projects_subtitle" data-aos="fade-left">
+            <div className="projects_subtitle" data-aos="fade-left" id="portfolio">
                 <img src={wave} alt="wave" />
                 <p>
                     Projects
@@ -20,7 +20,6 @@ const ProjectsComponent = () => {
             </div>
 
             <div className="projects_projects">
-                <ProjectCard title="McFiles" description="A file Storage made with django" logo={mcFiles} techs={["Django", "Css3", "HTML5", "JavaScript", "Docker"]} link="https://github.com/mccartheney/file-manager-in-django" githubLogo={github} />
                 <ProjectCard title="McFiles" description="A file Storage made with django" logo={mcFiles} techs={["Django", "Css3", "HTML5", "JavaScript", "Docker"]} link="https://github.com/mccartheney/file-manager-in-django" githubLogo={github} />
             </div>
 

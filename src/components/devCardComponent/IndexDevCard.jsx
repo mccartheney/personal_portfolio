@@ -46,26 +46,41 @@ const DevCardComponent = () => {
 
             <div className="devCard_buttons">
                 <div className="devCard_buttons_top">
-                    <button>
-                        <img src={emailLogo} alt="emailLogo" />
-                    </button>
+                    <a href="mailto:mccartheney@gmail.com" target="_blank" >
+                        <button>
+                                <img src={emailLogo} alt="emailLogo" />
+                        </button>
+                    </a>
 
-                    <button>
-                        <img src={githubLogo} alt="githubLogo" />
-                    </button>
-                    <button>
-                        <img src={instagramLogo} alt="instagramLogo" />
+                    <a href="https://github.com/mccartheney" target="_blank" >
+                        <button>
+                            <img src={githubLogo} alt="githubLogo" />
+                        </button>
+                    </a>
 
-                    </button>
-                    <button>
-                        <img src={linkedInLogo} alt="linkedInLogo" />
-                    </button>
-                    <button>
-                        <img src={upworkLogo} alt="upworkLogo" />
-                    </button>
+                    <a href="https://www.instagram.com/mccartheneymendes/" target="_blank" >
+                        <button>
+                            <img src={instagramLogo} alt="instagramLogo" />
+
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mccartheney-mendes-892709292/" target="_blank" >
+                        <button>
+                            <img src={linkedInLogo} alt="linkedInLogo" />
+                        </button>
+                    </a>
+
+                    <a href="https://www.upwork.com/freelancers/~018930a2838bb08387?viewMode=1" target="_blank">
+                        <button>
+                            <img src={upworkLogo} alt="upworkLogo" />
+                        </button>
+                    </a>
                 </div>
-                <div className="devCard_buttons_down">
-                    <button>Let's Work Together!</button>
+                
+                <div className="devCard_buttons_down" >
+                    <a href="#contact">
+                        <button>Let's Work Together!</button>
+                    </a>
                 </div>
             </div>
         </div>

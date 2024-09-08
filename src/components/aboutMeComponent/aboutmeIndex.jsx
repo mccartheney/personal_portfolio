@@ -1,13 +1,13 @@
 import wave from "../../images/geral/wind.svg"
 import download from "../../images/geral/download.svg"
 
-import frontend from "../../images/geral/front.svg"
-import backend from "../../images/geral/back.svg"
+import frontend from "../../images/geral/front.png"
+import backend from "../../images/geral/back.png"
 import AbouTechCardComponent from "./aboutTechCard"
 
 const AboutMeComponent = () => {
     return (
-        <div className="aboutMe">
+        <div className="aboutMe" id="about">
             <div className="aboutMe_subtitle" data-aos="fade-left">
                 <img src={wave} alt="wave" />
                 <p>

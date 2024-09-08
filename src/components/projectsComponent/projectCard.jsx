@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
 
     return (
         <>
-            <div className={`projectScreen ${visible} ${closeOrOpen}`}>
+            <div className={`projectScreen ${visible} ${closeOrOpen}`} >
                 <div className="projectScreen_close" data-aos="fade-left">
                     <button onClick={() => { openOrCloseWindow() }}>
                         x
@@ -41,7 +41,6 @@ const ProjectCard = (props) => {
                     <div className="projectScreen_content_techs" data-aos="fade-left">
                         {
                             techs.map(tech => {
-                                console.log(tech)
                                 return (
                                     <div className="projectScreen_content_techs_tech">
                                         <p>
@@ -70,7 +69,6 @@ const ProjectCard = (props) => {
                 <div className="projectCard_techs">
                     {
                         techs.map(tech => {
-                            console.log(tech)
                             return (
                                 <div className="projectCard_techs_tech">
                                     <p>

@@ -1,7 +1,7 @@
 /** SCSS DARK THEME PRIMARY COLORS */ 
 /** SCSS DARK THEME SURFACE COLORS */ 
 /** SCSS DARK THEME MIXED SURFACE COLORS */ 
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
 *, *:before, *:after {
@@ -55,6 +55,7 @@ input {
 }
 
 * {
+  text-decoration: none;
   transition: 0.5s;
 }
 
@@ -68,6 +69,10 @@ html {
     overflow-x: hidden;
   }
 }
+body, html {
+  overflow-x: clip;
+}
+
 @keyframes drawLogo {
   0% {
     stroke-dasharray: 4500;
@@ -146,7 +151,7 @@ body {
 .loading .loadingBottom h1 {
   font-size: calc(30px + 1vw);
   margin: 30px;
-  font-family: "Monoton", sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #5e43f3;
 }
 .loading .loadingBottom h1 span {
@@ -159,7 +164,7 @@ body {
 
 @media (max-width: 750px) {
   .loading .loadingUp .svgLogo {
-    margin: 70px;
+    margin-bottom: 25% !important;
   }
 }
 .main {
@@ -218,7 +223,7 @@ body {
 .devCard .devCard_logo h2 {
   margin-left: 20px;
   color: #5e43f3;
-  font-family: "Monoton", sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 30px;
 }
 .devCard .devCard_logo h2 span {
@@ -536,7 +541,7 @@ body {
   margin: 50px 0px;
 }
 .hey .hey_description h2 {
-  font-family: "Monoton", sans-serif;
+  font-family: "Russo One", sans-serif;
   color: white;
   font-size: 70px;
 }
@@ -629,7 +634,7 @@ body {
     margin: 50px 0px;
   }
   .hey .hey_description h2 {
-    font-family: "Monoton", sans-serif;
+    font-family: "Russo One", sans-serif;
     color: white;
     font-size: 50px;
   }
@@ -648,6 +653,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .hey .hey_buttons a {
+    width: 100%;
   }
   .hey .hey_buttons button {
     width: 95%;
@@ -713,7 +721,7 @@ body {
   margin: 50px 0px;
 }
 .projects .projects_title h2 {
-  font-family: "Monoton", sans-serif;
+  font-family: "Russo One", sans-serif;
   color: white;
   font-size: 70px;
 }
@@ -729,6 +737,9 @@ body {
   border-radius: 15px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+}
+.projects .projects_projects .projectCard:hover {
+  transform: scale(1.05);
 }
 .projects .projects_projects .projectCard .projectCard_image {
   width: 100%;
@@ -781,7 +792,7 @@ body {
   right: 50px;
 }
 .projects .projects_projects .projectScreen .projectScreen_close button {
-  font-family: "Monoton", sans-serif;
+  font-family: "Russo One", sans-serif;
   color: white;
   border: none;
   cursor: pointer;
@@ -867,7 +878,6 @@ body {
     align-items: flex-start;
   }
   .projects .projects_projects .projectCard {
-    cursor: pointer;
     margin: 30px 0px 30px 0px !important;
     width: 95% !important;
     border: 1px solid #717171;
@@ -995,7 +1005,7 @@ body {
   margin: 50px 0px;
 }
 .resume .resume_title h2 {
-  font-family: "Monoton", sans-serif;
+  font-family: "Russo One", sans-serif;
   color: white;
   font-size: 70px;
 }
@@ -1068,6 +1078,9 @@ body {
   margin-right: 30px;
   margin-bottom: 25px;
   border-radius: 20px;
+}
+.resume .resume_tools .resume_tools_tools .tool:hover {
+  transform: scale(1.1);
 }
 .resume .resume_tools .resume_tools_tools .tool img {
   width: 100px;
@@ -1278,7 +1291,7 @@ body {
 }
 .contact .contact_title h2 {
   width: 80%;
-  font-family: "Monoton", sans-serif;
+  font-family: "Russo One", sans-serif;
   color: white;
   font-size: 70px !important;
 }
@@ -1369,7 +1382,7 @@ body {
   width: 30px;
 }
 .contact form button:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 
 @media (max-width: 1600px) {
@@ -1513,7 +1526,7 @@ footer .footer_content p {
   margin: 50px 0px;
 }
 .aboutMe .aboutMe_title h2 {
-  font-family: "Monoton", sans-serif;
+  font-family: "Russo One", sans-serif;
   color: white;
   font-size: 70px;
 }
@@ -1701,5 +1714,53 @@ footer .footer_content p {
   }
   .aboutMe_cards .techCard .techCard_topics .techCard_topics_topic {
     font-size: 10px !important;
+  }
+}
+.popUpContainer {
+  position: fixed;
+  top: 0px;
+  z-index: 10000000000;
+  animation: 1s appear;
+  padding-top: 18px;
+  font-size: 13px;
+  font-family: "Maven Pro", sans-serif;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popUpContainer .popUpContainer_popUp {
+  border-radius: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 20px 30px;
+  background-color: #5e43f3;
+  color: white;
+}
+
+.invisiblePopUp {
+  opacity: 0;
+  animation: 1s disappear;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes disappear {
+  0% {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
 }/*# sourceMappingURL=style.css.map */

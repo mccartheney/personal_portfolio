@@ -1,0 +1,39 @@
+.popUpContainer
+    position: fixed
+    top: 0px
+    z-index: 10000000000
+    animation: 1s appear
+    padding-top: 18px
+    font-size: 13px
+    font-family: $textFont 
+    width: 100vw
+    display: flex
+    align-items: center
+    justify-content: center
+    .popUpContainer_popUp
+        border-radius: 10px
+        width: max-content
+        padding: 20px 30px
+        background-color: $primary-200
+        color: white
+
+.invisiblePopUp
+    opacity: 0
+    animation: 1s disappear
+
+@keyframes appear
+    0%
+        opacity: 0
+        transform: translateY(-20px)
+    100%
+        opacity: 1
+        transform: translateY(0px)
+
+@keyframes disappear
+    0%
+        display: flex
+        opacity: 1
+        transform: translateY(0px)
+    100%
+        opacity: 0
+        transform: translateY(-20px)
