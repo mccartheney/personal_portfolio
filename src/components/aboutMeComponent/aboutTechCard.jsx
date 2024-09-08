@@ -2,7 +2,7 @@ const AbouTechCardComponent = (props) => {
     const {title, topics, image} = props
 
     return (
-        <div className="techCard" data-aos="fade-left">
+        <div className="techCard" data-aos="fade-left" >
             <div className="techCard_title">
                 <h3>
                     {title}

@@ -4,6 +4,18 @@ import mcFiles from "../../images/projectsLogos/logo_mc_files.png"
 import github from "../../images/socialMedias/github.png"
 
 const ProjectsComponent = () => {
+    const projects = [
+        {
+            id: 1,
+            title: "McFiles",
+            description: "A file Storage made with django",
+            logo: mcFiles,
+            techs: ["Django", "Css3", "HTML5", "JavaScript", "Docker"],
+            link: "https://github.com/mccartheney/file-manager-in-django",
+            githubLogo: github
+        },
+    ];
+
     return (
         <div className="projects">
             <div className="projects_subtitle" data-aos="fade-left" id="portfolio">
@@ -20,7 +32,19 @@ const ProjectsComponent = () => {
             </div>
 
             <div className="projects_projects">
-                <ProjectCard title="McFiles" description="A file Storage made with django" logo={mcFiles} techs={["Django", "Css3", "HTML5", "JavaScript", "Docker"]} link="https://github.com/mccartheney/file-manager-in-django" githubLogo={github} />
+            
+                {projects.map((project) => (
+                    <ProjectCard
+                        key={project.id}
+                        title={project.title}
+                        description={project.description}
+                        logo={project.logo}
+                        techs={project.techs}
+                        link={project.link}
+                        githubLogo={project.githubLogo}
+                    />
+                ))}
+
             </div>
 
         </div>

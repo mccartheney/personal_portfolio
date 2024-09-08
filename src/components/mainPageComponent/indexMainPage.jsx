@@ -14,8 +14,8 @@ import { useEffect } from "react"
 
 const MainPageComponent = () => {
     const [visible, setVisible] = useState("invisiblePopUp")
+    const [disappear, setDissapear] = useState ("invisible")
 
-    
 
     useEffect(() => {
         if (visible === "") {
@@ -28,7 +28,7 @@ const MainPageComponent = () => {
 
     return (
         <div className="main">
-            <PopUp visible={visible} textContent ={"Email Sended, we will enter in contact soon"}/>
+            <PopUp visible={visible} disappear={disappear} setDissapear={setDissapear} textContent ={"Email Sended, we will enter in contact soon"}/>
             <ParticlesComponent/> 
             <div className="main_cardSection">
                 <DevCardComponent/>
@@ -39,7 +39,7 @@ const MainPageComponent = () => {
                 <ProjectsComponent/>
                 <AboutMeComponent/>
                 <ResumeComponent/>
-                <ContactComponent setVisible={setVisible} />
+                <ContactComponent setVisible={setVisible} setDissapear={setDissapear}/>
                 <FooterComponent/>
             </div>
         </div>

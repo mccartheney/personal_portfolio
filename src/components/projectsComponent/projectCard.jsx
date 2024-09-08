@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const ProjectCard = (props) => {
-    const { title, description, logo, techs, link, githubLogo } = props
+    const { title, description, logo, techs, link, githubLogo, key } = props
 
     const [visible, setVisible] = useState("invisible")
     const [closeOrOpen, setCloseOrOpen] = useState("close")
@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
 
     return (
         <>
-            <div className={`projectScreen ${visible} ${closeOrOpen}`} >
+            <div className={`projectScreen ${visible} ${closeOrOpen}`} key={key}>
                 <div className="projectScreen_close" data-aos="fade-left">
                     <button onClick={() => { openOrCloseWindow() }}>
                         x
@@ -40,7 +40,7 @@ const ProjectCard = (props) => {
 
                     <div className="projectScreen_content_techs" data-aos="fade-left">
                         {
-                            techs.map(tech => {
+                            techs.map((tech) => {
                                 return (
                                     <div className="projectScreen_content_techs_tech">
                                         <p>

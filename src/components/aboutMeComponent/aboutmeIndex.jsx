@@ -37,10 +37,10 @@ const AboutMeComponent = () => {
                     </p>
                 </div>
                 <div className="aboutMe_content_infos" data-aos="fade-left">
-                    <AboutInfo info="Name" content="Mccartheney Mendes" />
-                    <AboutInfo info="GitHub" content="@mccartheney"/>
-                    <AboutInfo info="Email" content="mccartheney@hotmail.com"/>
-                    <AboutInfo info="Location" content="Faro - Portugal" />
+                    <AboutInfo key={4} info="Name" content="Mccartheney Mendes" />
+                    <AboutInfo key={5} info="GitHub" content="@mccartheney"/>
+                    <AboutInfo key={7} info="Email" content="mccartheney@hotmail.com"/>
+                    <AboutInfo key={8} info="Location" content="Faro - Portugal" />
                 </div>
             </div>
 
@@ -49,8 +49,8 @@ const AboutMeComponent = () => {
             </div>
 
             <div className="aboutMe_cards">
-                <AbouTechCardComponent title="FrontEnd" topics={["Clean Code Practices", "Responsive Design", "Component-Based Architecture", "Performance Optimization", ]} image={frontend} />
-                <AbouTechCardComponent title="BackEnd" topics={["API Development", "Database Management", "Authentication & Authorization","Scalability & Performance"]} image={backend} />
+                <AbouTechCardComponent key={1} title="FrontEnd" topics={["Clean Code Practices", "Responsive Design", "Component-Based Architecture", "Performance Optimization", ]} image={frontend} />
+                <AbouTechCardComponent key={2} title="BackEnd" topics={["API Development", "Database Management", "Authentication & Authorization","Scalability & Performance"]} image={backend} />
             </div>
         </div>
     )

@@ -9,6 +9,9 @@ import linkedInLogo from "../../images/socialMedias/linkedIn.png"
 import upworkLogo from "../../images/socialMedias/upwork.png"
 
 const DevCardComponent = () => {
+
+    document.
+
     return (
         <div className="devCard" data-aos="fade-right">
             <div className="devCard_logo">

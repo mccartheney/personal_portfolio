@@ -21,6 +21,10 @@
     opacity: 0
     animation: 1s disappear
 
+.invisible
+    display: none
+    animation: none !important
+
 @keyframes appear
     0%
         opacity: 0
@@ -31,7 +35,6 @@
 
 @keyframes disappear
     0%
-        display: flex
         opacity: 1
         transform: translateY(0px)
     100%

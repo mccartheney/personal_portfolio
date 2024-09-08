@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const ContactComponent = (props) => {
 
-    const { setVisible } = props
+    const { setVisible, setDissapear } = props
 
     const [name, setName] = useState("")
     const [company, setCompany] = useState("")
@@ -84,7 +84,9 @@ const ContactComponent = (props) => {
                     <textarea name="message" id="text" placeholder="Your message *" data-aos="fade-left" required onChange={(event) => updateInput(event.target, setMessage)} /> 
                 </div>
 
-                <button type="submit" data-aos="fade-left" > Send Message <img src={send} alt=""/></button>
+                <button type="submit" data-aos="fade-left" onClick={() => { setTimeout (()=> {
+                    setDissapear("")
+                }, 500)  }}> Send Message <img src={send} alt=""/></button>
             </form>
         </div>
     )
