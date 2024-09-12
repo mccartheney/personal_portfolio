@@ -861,6 +861,8 @@ body {
 }
 @media (max-width: 990px) {
   .projects {
+    padding-top: 100px;
+    margin-top: 10px !important;
     margin-left: 5% !important;
   }
   .projects .projects_subtitle p {
@@ -1167,6 +1169,8 @@ body {
 }
 @media (max-width: 990px) {
   .resume {
+    padding-top: 100px;
+    margin-top: 10px !important;
     margin-left: 5%;
   }
   .resume .resume_subtitle p {
@@ -1411,6 +1415,8 @@ body {
 }
 @media (max-width: 990px) {
   .contact {
+    padding-top: 100px;
+    margin-top: 10px !important;
     margin-left: 5%;
   }
   .contact .contact_title h2 {
@@ -1678,6 +1684,8 @@ footer .footer_content p {
 }
 @media (max-width: 990px) {
   .aboutMe {
+    padding-top: 100px;
+    margin-top: 10px !important;
     margin-left: 5%;
   }
   .aboutMe .aboutMe_subTitle p {
